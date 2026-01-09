@@ -1203,7 +1203,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #c6ffe2;
+  background: #1ddb75;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2385,4 +2385,12 @@ embed {
 .series-list a:hover {
   background-color: #e3f2fd;
   text-decoration: none;
+}
+/* 隐藏所有time元素自带的title悬浮提示 */
+time[title] {
+  cursor: default !important;
+}
+time[title]:hover,
+time[title]:focus {
+  pointer-events: none !important;
 }
